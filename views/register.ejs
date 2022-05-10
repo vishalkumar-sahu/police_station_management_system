@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <img src="Digital_India_logo.svg.png" alt="Digital India" height="100" width="400">
+    
+<style>
+	body 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+        
+		margin-left:25%;
+		margin-right:25%;
+		border: 5px solid #000000;
+		border-radius: 10px;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 99%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: whitesmoke;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #C9E4FF;
+		color: black;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: 4px solid ;
+        border-radius: 15px;
+		cursor: pointer;
+		width: 100%;
+		font-weight:bold;
+		
+    }
+	
+
+</style>
+</head>
+<body>
+	<form action="/auth/register" method="post">
+        
+		<h1>Sign In</h1>
+		<p>Please fill in the details</p>
+		<hr>
+		
+		<label for="first_name"><b>Enter First name</b></label>
+		<input type="text" placeholder="Enter First name" name="first_name" required><br>
+
+        		
+		<label for="last_name"><b>Enter Last name</b></label>
+		<input type="text" placeholder="Enter Last name" name="last_name" required><br>
+
+       
+        <br>
+        <label for="aadhar_no"><b>Aadhar No</b></label> 
+		<input type="text" placeholder="Enter Aadhar number" name="aadhar_no" required><br>
+		<br><hr>
+
+		<label for="contact_no"><b>Contact no</b></label>
+		<input type="text" placeholder="mobile no" name="contact_no" required><br>
+
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Email" name="email" required><br>
+
+		<label for="house_no"><b>House NO</b></label>
+		<input type="text" placeholder="House no" name="house_no" required><br>
+
+		<label for="locality"><b>Locality/Area</b></label>
+		<input type="text" placeholder="Locality" name="locality" required><br>
+
+		<label for="city"><b>City</b></label>
+		<input type="text" placeholder="Enter city" name="city" required><br>
+
+		<label for="district"><b>District</b></label>
+		<input type="text" placeholder="Enter District" name="district" required><br>
+
+		<label for="state"><b>Enter State</b></label>
+		<input type="text" placeholder="Enter State" name="state" required><br>
+
+		<label for="postal_code"><b>Postal Code</b></label>
+		<input type="text" placeholder="Enter Postal code" name="postal_code" required><br>
+
+		<hr>
+        <label for="password"><b>Password</b></label>
+		<input type="password" placeholder="Enter password" name="password" required><br>
+
+        <label for="confirm_password"><b>Confirm password</b></label>
+		<input type="password" placeholder="Enter confirm password" name="confirm_password" required><br>
+
+
+		<button type="submit" class="registerbutton">Register</button>
+
+	</form>
+	<p>Have an account? <a href="/">Login</a></p>
+  
+
+
+</body>
+</html>

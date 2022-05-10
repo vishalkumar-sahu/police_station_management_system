@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <img src="Digital_India_logo.svg.png" alt="Digital India" height="100" width="400">
+    
+<style>
+	body 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+        
+		margin-left:25%;
+		margin-right:25%;
+		border: 5px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #C9E4FF;
+		color: black;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: 4px solid ;
+        border-radius: 15px;
+		cursor: pointer;
+		width: 100%;
+		font-weight:bold;
+		
+    }
+	
+
+</style>
+
+<SCRIPT language=JavaScript>
+
+	var message = "Right Click Disabled !!!!";
+	
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+	
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+	
+	document.onmousedown = rtclickcheck;
+	
+</SCRIPT>
+
+</head>
+<body>
+	<form action="/admin/registerChallan" method="post">
+        
+		<h1>E-Challan</h1>
+		<p>Please fill in the details</p>
+		<hr>
+		
+		<label for="dl_number"><b>Driving Licence Number</b></label>
+		<input type="text" placeholder="Enter Driving Licence Number" name="dl_number" required><br>
+
+        <label for="aadhar_no"><b>Aadhar Number</b></label>
+		<input type="text" placeholder="Enter Aadhar Number" maxlength="12" minlength="12" name="aadhar_no" required><br>
+        		
+		<label for="voilation"><b>VOILATION</b></label>
+		<input type="text" placeholder="Enter Voilation" name="voilation" required><br>
+
+		<hr>
+        <label for="vehicle_type">Choose a Vehicle type:</label>
+        <select id="cars" name="vehicle_type">
+          <option value="Select type">Select Vehicle Type...</option>
+          <option value="Two Wheeler">Two Wheeler</option>
+          <option value="Three Wheelers/ AUTO">Three Wheelers/ AUTO</option>
+          <option value="Mini car/ Sedan">Mini car/ Sedan</option>
+          <option value="Mini Bus/ Bus">Mini Bus/ Bus</option>
+          <option value="Goods Carrier">Goods Carrier</option>
+        </select>
+        <br>
+        <br>
+        <hr>
+		<label for="vehicle_no"><b>Vehicle Number</b></label>
+		<input type="text" placeholder="Vehicle No." name="vehicle_no" required><br>
+		
+        <br>
+        <label for="date_and_time"><b>Date and Time</b></label> 
+		<input type="datetime-local" name="date_and_time" ><br>
+
+		<input style="visibility: hidden; padding: 0px; margin: 0px;" type="text"  name="official_id" id="official_id" >
+		<script>
+			const official_id = document.querySelector("#official_id");
+			official_id.value = localStorage.getItem('user')
+		</script>
+
+		<hr>
+        <label for="fine_amount"><b>Enter Fine Amount</b></label>
+		<input type="text" placeholder="Enter Fine Amount" name="fine_amount" required><br>
+        
+        <label for="payment_status"><b>Payment Status</b></label>
+		<input type="text" placeholder="Enter Payment Status" name="payment_status" required><br>
+
+        
+
+		
+
+		<button type="submit" class="registerbutton">Add Challan</button>
+
+        
+		
+  
+		
+		
+		
+	</form>
+  
+
+
+</body>
+</html>

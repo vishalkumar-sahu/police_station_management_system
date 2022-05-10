@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Ctizen Services</title>
+</head>
+<body>
+  <div id="blur">
+    <div class="left">
+        <img src="emblem-dark.png" alt="error">
+      <img src="xx.png" alt="error" class="kk" height="100px" width="100px">
+    </div>
+
+    <div class="mid">
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+            <li><a href="/citizen/register_fir">FIR</a></li>
+            <!-- <li><a href="#" onclick=" chlan_toogle()">E-Challan</a></li> -->
+            <li><a href="/citizen/viewChallan" >E-Challan</a></li>
+            <li><a href="/citizen/requestPermission">Permission</a></li>
+            <!-- <li><a href="#" onclick="cit_toggle()">Login</a></li>  -->
+            <!-- <li><a href="vehicle.html">Vehicle</a></li>
+            <li><a href="weapons.html">Weapon Inventory</a></li>
+            <li><a href="criminal.html">Criminal Record</a></li> -->
+            <li style="margin-left: 200px;"><a href="/logout" onclick="logout()"><span class="material-symbols-outlined" style="font-size: 30px;">logout</span></a></li>
+            <script>
+              function logout(){
+                localStorage.removeItem('user');
+              }
+            </script>
+        </ul>
+
+  
+    </div>
+
+    <div class="menu">
+      <div class="box">
+            
+        <!-- <a href="#" onclick="fir_toggle()"><img src="firr.png" alt=""> -->
+          <a href="/citizen/viewFir" ><img src="firr.png" alt="">
+          <br> <br>
+       View FIR</a>
+      </div> 
+
+        <div class="box">
+
+          <a href="/citizen/register_fir"><img src="firr.png" alt=""> 
+          <br> <br>
+          Register FIR
+          
+          </a>
+        </div>
+
+
+      <div class="box">
+
+        <!-- <a href="#" onclick=" chlan_toogle()">  <img src="chln.png" alt="error">  -->
+          <a href="/citizen/viewChallan" >  <img src="chln.png" alt="error"> 
+        <br><br>
+      View E-Challan 
+    </a></div>
+
+        <div class="box">
+
+          <a href="/citizen/requestPermission"> <img src="veh.png" alt="error">
+          <br> <br>
+          Request Permission
+          </a>
+
+        </div>
+
+
+      <div class="box">
+      
+        <br> <br>
+        <!-- <a href="#" onclick="permission_toogle()"><img src="PoliceVeri.png" alt="error">  -->
+          <a href="/citizen/viewPermission" ><img src="PoliceVeri.png" alt="error"> 
+          <br> <br> 
+           View Permission Status</a></div>
+
+    </div> 
+    <div class="close">
+
+      <div class="cl_box1">
+          <h4>Source : Uttarakhand Police - Government of Uttarakhand</h4>
+      </div>
+          <div class="other">
+              <p>Site designed and developed by Anurag Jahav </p>
+              <p><br> Contents of this website is published and managed by Police Department Uttarakhand. For any queries regarding this webiste please contact <a href="">NIC IITV</a></p>
+              <p><strong>Copyright 2022 Police Department, Government of Uttarakhand.</strong></p>
+
+          </div>
+</div>
+
+    <div class="right">
+      <img src="digital-india.png" alt="error loading">
+     <img src="x.png" alt="error_loading" class="modi" >                
+  </div>
+</div>
+                                            <!-- FIR Script -->
+   <!-- <script type="text/javascript">
+       function fir_toggle(){
+         var blur = document.getElementById('blur');
+         blur.classList.toggle('active');
+         var popup = document.getElementById('fir_popup');
+         popup.classList.toggle('active')
+       }
+   </script>
+
+<div class="popup" id ="fir_popup">
+
+  <h2>FIR Number</h2>
+  <form action="" method="post">
+    <label for="fir_no"><b>FIR Number</b></label>
+    <input type="text" placeholder="Enter FIR Number" name="fir_no" required><br>
+    <button type="submit" class="registerbutton">Enter</button>
+  </form>
+ <br> <br>
+      <a href="#" onclick="fir_toggle()" class="back">Go Back</a>
+    </div> -->
+
+
+                                        <!-- Challan Script -->
+    <!-- <script type="text/javascript">
+        function chlan_toogle(){
+          var blur = document.getElementById('blur');
+          blur.classList.toggle('active');
+          var popup = document.getElementById('chlan_popup');
+          popup.classList.toggle('active')
+         
+        }
+      </script>
+       
+      
+        <div class="popup" id="chlan_popup">
+          <h2>Challan Section</h2>
+          <label for="chln"><b>Challan Number</b></label>
+          <input type="text" placeholder="Enter Challan Number" name="chln" required><br>
+          <button type="submit" class="registerbutton">Enter</button>
+          
+        
+         <br>
+              <a href="#" onclick="chlan_toogle()" class="back">Go Back</a>
+            </div> 
+ -->
+
+                                <!-- Permission Script -->
+ <!-- <script type="text/javascript">
+        function permission_toogle(){
+          var blur = document.getElementById('blur');
+          blur.classList.toggle('active');
+          var popup = document.getElementById('permission_popup');
+          popup.classList.toggle('active')
+         
+        }
+      </script>
+       
+      
+        <div class="popup" id="permission_popup">
+          <h2>Permission Status</h2>
+          <label for="per"><b>Permission ID</b></label>
+          <input type="text" placeholder="Enter the Permission ID" name="per" required><br>
+          <button type="submit" class="registerbutton">Enter</button>
+          
+        
+         <br> 
+
+       
+              <a href="#" onclick="permission_toogle()" class="back">Go Back</a>
+            </div>  -->
+</body>
+</html>
