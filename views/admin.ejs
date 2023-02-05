@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Admin</title>
+</head>
+<body> 
+  <div id="blur">
+    <div class="left">
+        <img src="emblem-dark.png" alt="error">
+      <img src="xx.png" alt="error" class="kk" height="100px" width="100px">
+    </div>
+
+    <div class="mid">
+        <ul>
+            <!-- <li><a href="/" >Home</a></li> -->
+            <li><a href="/admin/viewFir" >FIR</a></li>
+            <li><a href="/admin/viewChallan" >E-Challan</a></li>
+            
+            <li><a href="/admin/viewVehicle" >Vehicle</a></li>
+            <li><a href="/admin/viewWeapon" >Weapon Inventory</a></li>
+            <li><a href="/admin/viewCriminal" >Criminal Record</a></li>
+            <li style="margin-left: 200px;"><a href="/logout" onclick="logout()"><span class="material-symbols-outlined" style="font-size: 30px;">logout</span></a></li>
+            <script>
+              function logout(){
+                localStorage.removeItem('user');
+              }
+            </script>
+        </ul>
+
+  
+    </div>
+
+    <div class="menu">
+      <div class="box">
+            
+        <a href="/admin/viewFir" ><img src="firr.png" alt="">
+          <br> <br>
+        FIR 
+       </a>
+      </div>
+      
+      <div class="box">
+        <a href="/admin/registerChallan" >  <img src="chln.png" alt="error"> 
+        <br><br>
+      Add E-Challan 
+    </a></div>
+
+      <div class="box">
+        <br> <br>
+        <a href="/admin/viewPermission" ><img src="PoliceVeri.png" alt="error"> 
+          <br> <br> 
+           Permission</a></div>
+    
+           <div class="box">
+        <a href="/admin/registerVehicle" >
+          <img src="veh.png" alt="error" >
+          <br> <br>
+          Add Vehicle</a></div>
+      <div id="jj" class="box">
+        <a href="/admin/registerWeapon" > <img src="inve.png" alt="error_loading"> 
+          <br> <br> 
+           Add Weapon</a></div>
+      <div class="box">
+        <a href="/admin/criminalRecord" ><img src="crim.png" alt="error"> 
+          <br> <br>
+           Add Criminal Record</a></div>
+
+   
+        <div class="box">
+            <a href="/admin/viewCitizen"> <img src="user.png" alt="error">
+            <br> <br>
+             View Citizen's List
+            </a>
+             
+           
+
+        </div>
+    <div class="box">
+
+        <a href="/admin/registerAdmin"><img src="user.png" alt="error"> 
+        <br> <br>
+            Add new Admin
+    
+    </a>
+    </div>
+
+</div> 
+    <div class="close"> 
+
+      <div class="cl_box1">
+          <h4>Source : Uttarakhand Police - Government of Uttarakhand</h4>
+      </div>
+          <div class="other">
+              <p>Site designed and developed by Anurag Jahav </p>
+              <p><br> Contents of this website is published and managed by Police Department Uttarakhand. For any queries regarding this webiste please contact <a href="">NIC IITV</a></p>
+              <p><strong>Copyright 2022 Police Department, Government of Uttarakhand.</strong></p>
+
+          </div>
+</div>
+
+    <div class="right">
+      <img src="digital-india.png" alt="error loading">
+     <img src="x.png" alt="error_loading" class="modi" >               
+  </div>
+</div>
+
+   
+   
+   
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <img src="Digital_India_logo.svg.png" alt="Digital India" height="100" width="500">
+    
+<style>
+	body 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 5px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		/* text:bold; */
+		}
+	
+
+</style>
+
+<SCRIPT language=JavaScript>
+
+	var message = "Right Click Disabled !!!!";
+	
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+	
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+	
+	document.onmousedown = rtclickcheck;
+	
+</SCRIPT>
+
+</head>
+<body>
+	<form action="/citizen/register_fir" method="post">
+		<h1>Register FIR</h1>
+		<p>Please fill in the details</p>
+		<hr>
+		
+		<label for="suspect_name"><b>Suspect Name</b></label>
+		<input type="text" placeholder="Enter Suspect Name" name="suspect_name" required><br>
+		
+		<label for="contact_no"><b>Suspect Contact No.</b></label>
+		<input type="text" placeholder="Enter Suspect Contact No." name="contact_no" required><br>
+		
+		<label for="address"><b>Suspect Address</b></label> 
+		<input type="text" placeholder="Enter Suspect Address" name="address" required><br>
+
+		<label for="place_of_incident"><b>Place of incident</b></label>
+		<input type="text" placeholder="Enter Place of Incident" name="place_of_incident" required><br>
+
+		<label for="gender"><b>Select Gender</b></label><br>
+		<input type="radio" name="gender" value="Male" >Male
+        <input type="radio" name="gender" value="Female" >Female
+        <input type="radio" name = "gender" value="Others"> Others
+        
+		<input style="visibility: hidden; padding: 0px; margin: 0px;" type="text"  name="citizen_id" id="citizen_id" >
+		<script>
+			const official_id = document.querySelector("#citizen_id");
+			official_id.value = localStorage.getItem('user')
+		</script>
+
+        <label for="date_and_time"><b>Date of incident</b></label><br>
+		<input type="datetime-local" placeholder="Enter Date and time of incidence" name="date_and_time" required><br>
+        <br>
+        <label for="brief"><b>Add Description</b></label> 
+		<input type="text" placeholder="Description" name="brief" required><br>
+		<hr>
+		
+
+		<button type="submit" class="registerbutton">Register FIR</button>
+		
+	</form>
+  
+
+
+</body>
+</html>
